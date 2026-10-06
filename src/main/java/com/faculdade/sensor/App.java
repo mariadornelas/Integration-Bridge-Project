@@ -1,11 +1,5 @@
 package com.faculdade.sensor;
 
-/**
- * Cliente de demonstração. Só conhece {@link GerenciadorSensores},
- * {@link FabricaSensores}, {@link Sensor} e {@link CanalComunicacao}:
- * nenhuma classe concreta de fábrica, sensor ou canal de comunicação
- * aparece como tipo de variável, a não ser para ler o histórico do canal.
- */
 public class App {
 
     public static void main(String[] args) {

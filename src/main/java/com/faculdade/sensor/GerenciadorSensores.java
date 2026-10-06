@@ -4,15 +4,6 @@ import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * <b>Singleton</b>: único ponto de acesso às fábricas de sensores.
- *
- * <p>Resolve por Reflection a classe {@code FabricaSensores<ambiente>} e
- * guarda cada fábrica em cache, de modo que pedir o mesmo ambiente duas
- * vezes devolve a mesma instância. As fábricas não guardam estado (o canal
- * é passado a cada criação), por isso podem ser compartilhadas com
- * segurança.</p>
- */
 public class GerenciadorSensores {
 
     private static final GerenciadorSensores INSTANCIA = new GerenciadorSensores();

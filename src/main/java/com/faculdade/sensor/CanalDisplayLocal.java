@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Concrete Implementor 1: mostra a leitura no painel local do equipamento. */
 public class CanalDisplayLocal implements CanalComunicacao {
 
     private final List<String> mensagensEnviadas = new ArrayList<>();

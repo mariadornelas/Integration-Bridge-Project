@@ -1,6 +1,5 @@
 package com.faculdade.sensor;
 
-/** Concrete Factory / Concrete Creator da família "Externo". */
 public class FabricaSensoresExterno extends FabricaSensores {
 
     @Override

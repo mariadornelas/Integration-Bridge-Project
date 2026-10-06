@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Concrete Implementor 2: transmite a leitura para a rede supervisória remota. */
 public class CanalRedeRemota implements CanalComunicacao {
 
     private final List<String> mensagensEnviadas = new ArrayList<>();

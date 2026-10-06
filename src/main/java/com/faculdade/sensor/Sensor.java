@@ -2,15 +2,6 @@ package com.faculdade.sensor;
 
 import java.util.Objects;
 
-/**
- * Abstraction do Bridge: guarda a referência ao {@link CanalComunicacao}
- * (a "ponte") e orquestra o monitoramento. A regra de classificação fica
- * nas subclasses; a transmissão fica inteira no canal.
- *
- * <p>Na integração, esta mesma hierarquia é também a hierarquia de
- * produtos da Abstract Factory: as fábricas produzem sensores já ligados
- * ao canal que receberem.</p>
- */
 public abstract class Sensor {
 
     protected CanalComunicacao canal;
