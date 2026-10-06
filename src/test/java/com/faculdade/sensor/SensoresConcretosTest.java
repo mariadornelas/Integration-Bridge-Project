@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/** Limiares de cada produto concreto (Abstract Factory) e envio pelo canal (Bridge). */
 class SensoresConcretosTest {
 
     private final CanalComunicacaoFake canal = new CanalComunicacaoFake();

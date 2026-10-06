@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/** Singleton + resolução da fábrica por Reflection. */
 class GerenciadorSensoresTest {
 
     private final GerenciadorSensores gerenciador = GerenciadorSensores.getInstance();
@@ -37,7 +36,6 @@ class GerenciadorSensoresTest {
 
     @Test
     void nomeQueApontaParaClasseAbstrataDeveLancarExcecao() {
-        // "" resolve para FabricaSensores, que é abstrata e não pode ser instanciada.
         assertThrows(IllegalArgumentException.class, () -> gerenciador.obterFabrica(""));
     }
 }

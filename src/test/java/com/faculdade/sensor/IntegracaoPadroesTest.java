@@ -4,11 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Prova os quatro padrões trabalhando juntos: o cliente escolhe o ambiente
- * (Singleton + Abstract Factory + Factory Method) e o canal (Bridge) de forma
- * independente, e só enxerga abstrações.
- */
 class IntegracaoPadroesTest {
 
     private final GerenciadorSensores gerenciador = GerenciadorSensores.getInstance();
@@ -41,7 +36,6 @@ class IntegracaoPadroesTest {
         FabricaSensores externo = gerenciador.obterFabrica("Externo");
         CanalComunicacaoFake canal = new CanalComunicacaoFake();
 
-        // 70 graus: acima do alerta do Interno (60), abaixo do alerta do Externo (80).
         assertEquals("ALERTA", interno.criarSensorTemperatura(canal).monitorar(70.0));
         assertEquals("NORMAL", externo.criarSensorTemperatura(canal).monitorar(70.0));
     }

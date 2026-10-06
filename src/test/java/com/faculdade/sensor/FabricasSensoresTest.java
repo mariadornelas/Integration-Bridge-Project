@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/** Abstract Factory (consistência de família) + Factory Method (criação delegada às subclasses). */
 class FabricasSensoresTest {
 
     private final CanalComunicacaoFake canal = new CanalComunicacaoFake();
